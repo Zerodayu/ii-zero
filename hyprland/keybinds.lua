@@ -1,6 +1,3 @@
-hl.bind("CTRL+SUPER+ALT+Slash", hl.dsp.exec_cmd("xdg-open ~/.config/hypr/custom/keybinds.lua"),
-  { description = "Edit user keybinds" })
-
 -- tmux launch
 hl.bind("SUPER + ALT + Return", hl.dsp.exec_cmd("kitty -e tmux new-session -A -s 0"),
   { description = "App: Tmux" })
