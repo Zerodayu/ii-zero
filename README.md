@@ -57,7 +57,7 @@ hyprctl reload
 # nvim/LazyVim dynamic theme
 ln -s ~/.config/ii-zero/configs/nvim-plugin/theme-colors.lua ~/.config/nvim/lua/plugins/theme-colors.lua
 
-# Tmux layout and dynamyc theme
+# Tmux laoyut and dynamyc theme
 ln -s ~/.config/ii-zero/configs/tmux/ ~/.config/tmux
 
 # Opencode rules & dynamic theme
@@ -68,6 +68,15 @@ ln -s ~/.config/ii-zero/configs/opencode/ ~/.config/opencode
 ln -s ~/.config/ii-zero/configs/fastfetch/ ~/.config/fastfetch
 
 # XCompose (copy, not symlink — user edits are preserved)
-cp ~/.config/ii-zero/configs/xcompose/.Xcompose ~/.Xcompose
-# then relogin (needs to relogin every changes)
+cp ~/.config/ii-zero/configs/xcompose/.XCompose ~/.XCompose
+
+# Set XCOMPOSE_FILE before Hyprland starts (needed for libxkbcommon to find the file)
+echo 'export XCOMPOSE_FILE="$HOME/.Xcompose"' >> ~/.profile
+
+# Edit ~/.Xcompose and replace placeholders with your actual values:
+#   NAME_PLACEHOLDER → your name
+#   EMAIL_PLACEHOLDER → your email
+#   PASSWORD_PLACEHOLDER → your password
+
+# Then relogin (needs full relogin every time you change ~/.Xcompose)
 ```
