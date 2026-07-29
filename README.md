@@ -1,7 +1,7 @@
 # Illogical Impulse([end4](https://github.com/end-4/dots-hyprland)) dots with my Hyprland configs
 
-### Features
-#### Hyprland configs
+### — Features
+#### `Hyprland configs`
 |  | end4 | ii-zero |
 |--|------|---------|
 | **Windows** | solid | translucent |
@@ -11,7 +11,7 @@
 | **Scratchpad** | default | tighter gaps |
 
 
-#### Added / changed keybinds
+#### `Added / changed keybinds`
 
 | Keybind | Action |
 |---------|--------|
@@ -21,7 +21,7 @@
 > `SUPER+SHIFT+num` replaces end4's `SUPER+ALT+num` for sending windows to workspaces.
 > Numpad variants also bound.
 
-#### App configs
+#### `App configs`
 
 | App | Config |
 |-----|--------|
@@ -31,13 +31,14 @@
 
 ---
 
-### Installations
-#### Clone
+### — Installations
+#### `Clone`
 ```bash
 git clone https://github.com/Zerodayu/ii-zero.git ~/.config/
 ```
 
-#### Hyprland configs
+### — Usage
+#### `Hyprland configs`
 ```bash
 # backup existing
 mv ~/.config/hypr/custom ~/.config/hypr/custom.bak
@@ -46,7 +47,7 @@ ln -s ~/.config/ii-zero/hyprland/ ~/.config/hypr/custom
 hyprctl reload
 ```
 
-#### App configs
+#### `App configs`
 ```bash
 # nvim/LazyVim dynamic theme
 ln -s ~/.config/ii-zero/configs/nvim-plugin/theme-colors.lua ~/.config/nvim/lua/plugins/theme-colors.lua
