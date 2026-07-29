@@ -1,2 +1,2 @@
-hl.env("XCOMPOSED_CAPSLOCK", "1")
-
+hl.env("GTK_IM_MODULE", "xim")
+hl.env("QT_IM_MODULE", "xim")

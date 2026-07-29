@@ -69,4 +69,5 @@ ln -s ~/.config/ii-zero/configs/fastfetch/ ~/.config/fastfetch
 
 # XCompose (copy, not symlink — user edits are preserved)
 cp ~/.config/ii-zero/configs/xcompose/.Xcompose ~/.Xcompose
+# then relogin (needs to relogin every changes)
 ```
