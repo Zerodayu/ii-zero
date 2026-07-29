@@ -16,6 +16,7 @@
 | Keybind | Action |
 |---------|--------|
 | `SUPER + ALT + Return` | Launch tmux |
+| `SUPER + SHIFT + F` | Open floating fastfetch system info tile (any key to close) |
 | `SUPER + SHIFT + [1-0]` | Send window to workspace |
 
 > `SUPER+SHIFT+num` replaces end4's `SUPER+ALT+num` for sending windows to workspaces.
