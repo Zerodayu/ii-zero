@@ -57,4 +57,8 @@ ln -s ~/.config/ii-zero/configs/tmux/ ~/.config/tmux
 
 # Opencode rules & dynamic theme
 ln -s ~/.config/ii-zero/configs/opencode/ ~/.config/opencode
+
+
+# Fastfetch layout
+ln -s ~/.config/ii-zero/configs/fastfetch/ ~/.config/fastfetch
 ```
