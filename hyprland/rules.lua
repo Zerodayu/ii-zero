@@ -1,6 +1,3 @@
--- Fastfetch floating tile
-hl.window_rule({ match = { class = "^(fastfetch-float)$" }, float = true, center = true })
-
 hl.window_rule({ match = { class = "^()$", title = "^()$" }, no_blur = false })
 
 hl.window_rule({ match = { class = ".*" }, no_blur = false })

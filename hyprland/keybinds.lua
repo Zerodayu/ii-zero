@@ -1,5 +1,5 @@
 -- Fastfetch system info tile
-hl.bind("SUPER + ALT + Slash", hl.dsp.exec_cmd("kitty --class=fastfetch-float -e bash -c 'fastfetch; read -rsn1'"),
+hl.bind("SUPER + ALT + Slash", hl.dsp.exec_cmd("$HOME/.config/hypr/custom/scripts/display-sysinfo.sh"),
   { description = "Utilities: System info (fastfetch)" })
 
 -- tmux launch
