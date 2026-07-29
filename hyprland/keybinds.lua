@@ -1,3 +1,7 @@
+-- Fastfetch system info tile
+hl.bind("SUPER + SHIFT + F", hl.dsp.exec_cmd("kitty --class=fastfetch-float -e bash -c 'fastfetch; read -rsn1'"),
+  { description = "Utilities: System info (fastfetch)" })
+
 -- tmux launch
 hl.bind("SUPER + ALT + Return", hl.dsp.exec_cmd("kitty -e tmux new-session -A -s 0"),
   { description = "App: Tmux" })
