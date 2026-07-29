@@ -36,8 +36,6 @@ hl.config({
   },
 })
 
-
-
 hl.curve("easing", {
   type = "bezier",
   points = { { 0.25, 1 }, { 0.5, 1 } }
