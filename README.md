@@ -70,9 +70,6 @@ ln -s ~/.config/ii-zero/configs/fastfetch/ ~/.config/fastfetch
 # XCompose (copy, not symlink — user edits are preserved)
 cp ~/.config/ii-zero/configs/xcompose/.XCompose ~/.XCompose
 
-# Set XCOMPOSE_FILE before Hyprland starts (needed for libxkbcommon to find the file)
-echo 'export XCOMPOSE_FILE="$HOME/.Xcompose"' >> ~/.profile
-
 # Edit ~/.Xcompose and replace placeholders with your actual values:
 #   NAME_PLACEHOLDER → your name
 #   EMAIL_PLACEHOLDER → your email
