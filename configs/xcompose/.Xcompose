@@ -1,0 +1,9 @@
+include "%L"
+
+<Multi_key> <space> <space> : "—"
+<Multi_key> <space> <n> : "NAME_PLACEHOLDER"
+<Multi_key> <space> <e> : "EMAIL_PLACEHOLDER"
+<Multi_key> <space> <p> : "PASSWORD_PLACEHOLDER"
+
+! Add more entries below using the format:
+! <Multi_key> <key1> <key2> : "output"

@@ -17,6 +17,10 @@
 |---------|--------|
 | `SUPER + ALT + Return` | Launch tmux |
 | `SUPER + SHIFT + [1-0]` | Send window to workspace |
+| `CAPS + Space + Space` | emdash "—" |
+| `CAPS + Space + n` | Insert name |
+| `CAPS + Space + e` | Insert email |
+| `CAPS + Space + p` | Insert password |
 
 > `SUPER+SHIFT+num` replaces end4's `SUPER+ALT+num` for sending windows to workspaces.
 > Numpad variants also bound.
@@ -28,6 +32,7 @@
 | **Opencode** | `"theme": "system"` — follows illogical impulse light/dark theme |
 | **LazyVim** | Reads generated colors from `~/.local/state/quickshell/user/generated/colors.json` — dynamic Material You palette |
 | **Tmux** | Fish shell, vi keys, prefix `C-Space`, window management via `M-[1-9]`, dynamic status bar |
+| **XCompose** | Custom autofill for name/email/password (user preference) |
 
 ---
 
@@ -61,4 +66,7 @@ ln -s ~/.config/ii-zero/configs/opencode/ ~/.config/opencode
 
 # Fastfetch layout
 ln -s ~/.config/ii-zero/configs/fastfetch/ ~/.config/fastfetch
+
+# XCompose (copy, not symlink — user edits are preserved)
+cp ~/.config/ii-zero/configs/xcompose/.Xcompose ~/.Xcompose
 ```

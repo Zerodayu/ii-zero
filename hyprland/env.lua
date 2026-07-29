@@ -1,1 +1,2 @@
+hl.env("XCOMPOSED_CAPSLOCK", "1")
 
