@@ -1,7 +1,3 @@
--- Fastfetch system info tile
-hl.bind("SUPER + ALT + Slash", hl.dsp.exec_cmd("$HOME/.config/hypr/custom/scripts/display-sysinfo.sh"),
-  { description = "Utilities: System info (fastfetch)" })
-
 -- tmux launch
 hl.bind("SUPER + ALT + Return", hl.dsp.exec_cmd("kitty -e tmux new-session -A -s 0"),
   { description = "App: Tmux" })
