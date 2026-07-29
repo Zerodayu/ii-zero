@@ -34,6 +34,9 @@ hl.config({
     hotspot_padding = 1,
     hide_on_key_press = true
   },
+  input = {
+    kb_options = "compose:caps"
+  },
 })
 
 hl.curve("easing", {
