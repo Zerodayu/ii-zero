@@ -1,9 +1,9 @@
 # Illogical Impulse([end4](https://github.com/end-4/dots-hyprland)) dots with my Hyprland configs
 
 ### — Contents
-* [Features](#features) 
-* [Installation](#installations) 
-* [Usage](#usage) 
+* [Features](#-features) 
+* [Installation](#-installations) 
+* [Usage](#-usage) 
 
 ---
 
