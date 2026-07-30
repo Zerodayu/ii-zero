@@ -63,7 +63,7 @@ hyprctl reload
 ```bash
 # nvim/LazyVim dynamic theme
 mv ~/.config/nvim/lua/plugins.bak
-ln -s ~/.config/ii-zero/configs/nvim-plugin/ ~/.config/nvim/lua/plugins/
+ln -s ~/.config/ii-zero/configs/nvim-plugin/ ~/.config/nvim/lua/plugins
 
 # Tmux laoyut and dynamyc theme
 ln -s ~/.config/ii-zero/configs/tmux/ ~/.config/tmux
