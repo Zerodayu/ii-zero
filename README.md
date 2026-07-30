@@ -46,7 +46,7 @@
 ### — Installations
 #### `Clone`
 ```bash
-git clone https://github.com/Zerodayu/ii-zero.git ~/.config/
+git clone https://github.com/Zerodayu/ii-zero.git ~/.config/ii-zero
 ```
 
 ### — Usage
