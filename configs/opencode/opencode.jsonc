@@ -6,7 +6,7 @@
     "glob": "allow",
     "grep": "allow",
     "bash": "ask",
-    "edit": "ask"
+    "edit": "ask",
     "todowrite": "allow"
   }
 }
