@@ -41,7 +41,17 @@
 | **Opencode** | `"theme": "system"` — follows illogical impulse light/dark theme |
 | **LazyVim** | Reads generated colors from `~/.local/state/quickshell/user/generated/colors.json` — dynamic Material You palette |
 | **Tmux** | Fish shell, vi keys, prefix `C-Space`, window management via `M-[1-9]`, dynamic status bar |
+| **Fish** | Custom utility functions — see below |
 | **XCompose** | Custom autofill for name/email/password (user preference) |
+
+#### `Fish commands`
+
+| Command | Action |
+| ------- | ------ |
+| `n <file-or-dir>` | Quick nvim open (with cd for directories) |
+| `gclone <url> [dir]` | Git clone into ~/Projects |
+| `ttyedit` | Edit and reload <getty@tty1.service>(for auto-login using tty) |
+| `install-xcompose` | Copy .XCompose and set XCOMPOSEFILE |
 
 ---
 
@@ -83,9 +93,8 @@ ln -s ~/.config/ii-zero/configs/opencode/ ~/.config/opencode
 ln -s ~/.config/ii-zero/configs/fastfetch/ ~/.config/fastfetch
 
 # XCompose (copy, not symlink — user edits are preserved)
-cp ~/.config/ii-zero/configs/xcompose/.XCompose ~/.XCompose
-
-set -Ux XCOMPOSEFILE ~/.XCompose
+# Assumes fish config is sourced (includes install-xcompose function)
+install-xcompose
 
 # Edit ~/.Xcompose and replace placeholders with your actual values:
 #   NAME_PLACEHOLDER → your name
