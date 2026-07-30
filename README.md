@@ -1,27 +1,29 @@
 # Illogical Impulse([end4](https://github.com/end-4/dots-hyprland)) dots with my Hyprland configs
 
 ### — Contents
-* [Features](#-features) 
-* [Installation](#-installations) 
-* [Usage](#-usage) 
+
+* [Features](#-features)
+* [Installation](#-installations)
+* [Usage](#-usage)
 
 ---
 
 ### — Features
+
 #### `Hyprland configs`
-|  | end4 | ii-zero |
-|--|------|---------|
+
+| | end4 | ii-zero |
+| -- | ------ | --------- |
 | **Windows** | solid | translucent |
 | **Animations** | many curves & effects | simple easing |
 | **Blur** | minimal | strong |
 | **Keybinds** | default end4 | defaults + extras (see below) |
 | **Scratchpad** | default | tighter gaps |
 
-
 #### `Added / changed keybinds`
 
 | Keybind | Action |
-|---------|--------|
+| --------- | -------- |
 | `SUPER + ALT + Return` | Launch tmux |
 | `SUPER + SHIFT + [1-0]` | Send window to workspace |
 | `CAPS + Space + Space` | emdash "—" |
@@ -35,7 +37,7 @@
 #### `App configs`
 
 | App | Config |
-|-----|--------|
+| ----- | -------- |
 | **Opencode** | `"theme": "system"` — follows illogical impulse light/dark theme |
 | **LazyVim** | Reads generated colors from `~/.local/state/quickshell/user/generated/colors.json` — dynamic Material You palette |
 | **Tmux** | Fish shell, vi keys, prefix `C-Space`, window management via `M-[1-9]`, dynamic status bar |
@@ -44,13 +46,17 @@
 ---
 
 ### — Installations
+
 #### `Clone`
+
 ```bash
 git clone https://github.com/Zerodayu/ii-zero.git ~/.config/ii-zero
 ```
 
 ### — Usage
+
 #### `Hyprland configs`
+
 ```bash
 # backup existing
 mv ~/.config/hypr/custom ~/.config/hypr/custom.bak
@@ -60,6 +66,7 @@ hyprctl reload
 ```
 
 #### `App configs`
+
 ```bash
 # nvim/LazyVim dynamic theme
 mv ~/.config/nvim/lua/plugins.bak
