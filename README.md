@@ -70,6 +70,8 @@ ln -s ~/.config/ii-zero/configs/fastfetch/ ~/.config/fastfetch
 # XCompose (copy, not symlink — user edits are preserved)
 cp ~/.config/ii-zero/configs/xcompose/.XCompose ~/.XCompose
 
+set -Ux XCOMPOSEFILE ~/.XCompose
+
 # Edit ~/.Xcompose and replace placeholders with your actual values:
 #   NAME_PLACEHOLDER → your name
 #   EMAIL_PLACEHOLDER → your email
