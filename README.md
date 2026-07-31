@@ -77,6 +77,9 @@ hyprctl reload
 
 #### `App configs`
 
+add this line to `~/.config/fish/config.fish`
+> source ~/.config/ii-zero/configs/fish/@config.fish
+
 ```bash
 # nvim/LazyVim dynamic theme
 mv ~/.config/nvim/lua/plugins ~/.config/nvim/lua/plugins.bak
@@ -87,7 +90,6 @@ ln -s ~/.config/ii-zero/configs/tmux/ ~/.config/tmux
 
 # Opencode rules & dynamic theme
 ln -s ~/.config/ii-zero/configs/opencode/ ~/.config/opencode
-
 
 # Fastfetch layout
 ln -s ~/.config/ii-zero/configs/fastfetch/ ~/.config/fastfetch
