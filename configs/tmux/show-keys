@@ -1,0 +1,36 @@
+#!/bin/bash
+rows=$(tput lines)
+mapfile -t lines < <(tmux list-keys -N)
+total=${#lines[@]}
+pos=0
+
+show() {
+  printf '\033[2J\033[H'
+  for ((i = pos; i < pos + rows && i < total; i++)); do
+    printf '%s\n' "${lines[i]}"
+  done
+}
+
+while :; do
+  show
+  IFS= read -rsn1 key
+  case "$key" in
+    $'\e')
+      IFS= read -rs -t 0.05 -n1 k2
+      if [[ -z "$k2" ]]; then
+        break
+      elif [[ "$k2" == '[' ]]; then
+        IFS= read -rs -t 0.05 -n1 k3
+        case "$k3" in
+          A) ((pos--)) ;;
+          B) ((pos++)) ;;
+        esac
+      fi
+      ;;
+    j | J | ' ' | $'\n' | $'\r') ((pos++)) ;;
+    k | K) ((pos--)) ;;
+  esac
+  ((pos < 0)) && pos=0
+  ((pos > total - rows)) && pos=$((total - rows))
+  ((pos < 0)) && pos=0
+done
