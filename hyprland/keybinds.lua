@@ -4,6 +4,13 @@ hl.bind("SUPER + I", hl.dsp.global("quickshell:settingsToggle"), { description =
 -- tmux launch
 hl.bind("SUPER + ALT + Return", hl.dsp.exec_cmd("kitty -e tmux new-session -A -s 0"), { description = "App: Tmux" })
 
+-- toggle window transparency
+hl.bind(
+	"SUPER + Backspace",
+	hl.dsp.window.set_prop({ prop = "opaque", value = "toggle" }),
+	{ description = "Window: Toggle transparency" }
+)
+
 -- Send to workspace: SUPER + SHIFT + number
 for i = 1, 10 do
 	hl.bind("SUPER + SHIFT + " .. (i % 10), function()
