@@ -7,6 +7,12 @@
     "grep": "allow",
     "bash": "ask",
     "edit": "ask",
-    "todowrite": "allow"
+    "todowrite": "allow",
+    "skill": {
+      "*": "allow",
+      "pr-review": "allow",
+      "internal-*": "deny",
+      "experimental-*": "ask"
+    }
   }
 }
