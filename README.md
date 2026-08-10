@@ -78,7 +78,10 @@ hyprctl reload
 #### `App configs`
 
 add this line to `~/.config/fish/config.fish`
-> source ~/.config/ii-zero/configs/fish/@config.fish
+
+```bash
+source ~/.config/ii-zero/configs/fish/@config.fish
+```
 
 ```bash
 # nvim/LazyVim dynamic theme
