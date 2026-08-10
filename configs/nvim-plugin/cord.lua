@@ -6,7 +6,7 @@ return {
 		},
 		display = {
 			view = "full",
-			theme = "catppuccin",
+			theme = "minecraft",
 			flavor = "accent",
 		},
 		advanced = {
