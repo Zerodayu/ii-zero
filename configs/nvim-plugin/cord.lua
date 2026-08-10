@@ -16,5 +16,9 @@ return {
 				},
 			},
 		},
+		text = {
+			workspace = "", -- drop the workspace line, keep just the file line
+			games = function() end, -- returning nil behaves like ''
+		},
 	},
 }
