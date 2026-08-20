@@ -79,3 +79,18 @@ When generating code, documentation, or terminal commands:
 - Never substitute Bun commands with npm, pnpm, Yarn, or Node.js equivalents (unless no choice).
 - Treat Bun as the project's canonical runtime and package manager.
 - Optimize examples for Arch Linux and Neovim-based workflows.
+
+## Commit Message Suggestions
+
+At the end of every completed step, suggest a commit message in a table — never commit on your own.
+
+- Prefix the suggestion with one of: `update:`, `new:`, `add:`, `feat:`, `fix:`, `refactor:` and pick the one that best fits the change.
+- Keep the summary short and imperative (e.g. `feat: add fuzzy finder to config`).
+- Do not run `git commit`. Ask the user whether they want to commit themselves or have you run it.
+- Show the suggestion once, at the end of the step, so it does not overwhelm.
+
+| Commit message | Files to add |
+| -------------- | ------------ |
+| `update: ...`  | `configs/opencode/AGENTS.md` |
+
+```
