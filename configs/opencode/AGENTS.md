@@ -82,15 +82,23 @@ When generating code, documentation, or terminal commands:
 
 ## Commit Message Suggestions
 
-At the end of every completed step, suggest a commit message in a table — never commit on your own.
+Suggest a commit message at the END OF EACH STEP — not once per task or session.
 
-- Prefix the suggestion with one of: `update:`, `new:`, `add:`, `feat:`, `fix:`, `refactor:` and pick the one that best fits the change.
+- After every completed step (each distinct change: a feature added, a file edited,
+  a bug fixed, a refactor), immediately output ONE suggestion table covering only
+  the files that step changed.
+- If a task spans multiple steps, output one table per step. Never collapse them
+  into a single table at the end.
+- Prefix the message with one of: `update:`, `new:`, `add:`, `feat:`, `fix:`,
+  `refactor:` — pick the one that best fits that step.
 - Keep the summary short and imperative (e.g. `feat: add fuzzy finder to config`).
-- Do not run `git commit`. Ask the user whether they want to commit themselves or have you run it.
-- Show the suggestion once, at the end of the step, so it does not overwhelm.
+- "Files to add" lists only the file paths changed in that step (no `git add`
+  prefix). When a message covers several files, repeat the message on one row per
+  file so the table stays valid.
+- Do not run `git commit`. Ask the user whether they want to commit themselves
+  or have you run it.
 
-| Commit message | Files to add |
-| -------------- | ------------ |
-| `update: ...`  | `configs/opencode/AGENTS.md` |
-
-```
+| Commit message       | Files to add               |
+| -------------------- | -------------------------- |
+| `update: ...`        | `configs/opencode/AGENTS.md` |
+| `feat: ...`          | `src/foo.ts`               |
