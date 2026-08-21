@@ -6,7 +6,7 @@ This project uses Bun exclusively for both the runtime and package management. D
 
 - Runtime: Bun
 - Package Manager: Bun
-- Operating System: Arch Linux
+- Operating System: Arch Linux (CachyOS)
 - Editor: Neovim (LazyVim)
 - Language: TypeScript
 
