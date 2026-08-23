@@ -4,6 +4,8 @@ hl.bind("SUPER + I", hl.dsp.global("quickshell:settingsToggle"), { description =
 -- tmux launch
 hl.bind("SUPER + ALT + Return", hl.dsp.exec_cmd("kitty -e tmux new-session -A -s 0"), { description = "App: Tmux" })
 
+hl.bind("SUPER + ALT + t", hl.dsp.exec_cmd("kitty -e tmux new-session -A -s 0"), { description = "App: Tmux" })
+
 -- toggle window transparency
 hl.bind(
 	"SUPER + Backspace",
