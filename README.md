@@ -48,9 +48,10 @@
 | Command | Action |
 | ------- | ------ |
 | `n <file-or-dir>` | Quick nvim open (with cd for directories) |
-| `ttyedit` | Edit and reload getty@tty1.service |
+| `ttyedit` | Edit and reload <getty@tty1.service> |
 | `install-xcompose` | Copy .XCompose and set XCOMPOSEFILE |
 | `matugen-patch` | Patch matugen config with nvim/opencode templates |
+| `install-end4-pC` | Clone and start end4-pC quickshell config |
 | `oc` | alias for opencode |
 | `fish-reload` | Reload fish config |
 

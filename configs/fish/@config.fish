@@ -31,6 +31,25 @@ function matugen-patch
     bash ~/.config/ii-zero/configs/matugen/matugen-patch.sh
 end
 
+function install-end4-pC
+    set -l target ~/.config/quickshell/end4-pC
+    if [ -d "$target" ]
+        echo "end4-pC already installed, skipping."
+        return 1
+    end
+    git clone https://github.com/pctrade/end4-pC.git "$target"
+    killall qs 2>/dev/null
+    qs -c end4-pC > /dev/null 2>&1 & disown
+    echo "end4-pC installed and started."
+
+    read -P "Set end4-pC as default shell? [y/N] " -l confirm
+    if test "$confirm" = "y" -o "$confirm" = "Y"
+        sed -i 's/hl.env("qsConfig", "ii")/hl.env("qsConfig", "end4-pC")/' \
+            ~/.config/hypr/hyprland/variables.lua
+        echo "Default shell set to end4-pC. Run 'hyprctl reload' to apply."
+    end
+end
+
 alias oc opencode
 alias fish-reload 'source ~/.config/fish/config.fish && source ~/.config/ii-zero/configs/fish/@config.fish'
 set -gx EDITOR nvim
