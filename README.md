@@ -1,4 +1,8 @@
-# Illogical Impulse([end4](https://github.com/end-4/dots-hyprland)) dots with my Hyprland configs
+<p align="left">
+  <img alt="header" src="https://shieldcn.dev/header/gradient.svg?title=ii-zero&amp;subtitle=Illogical+Impulse-end4+dots+with+my+Hyprland+configs&amp;logo=archlinux&amp;mode=dark&amp;align=left&amp;font=fira-code" />
+</p>
+
+([Illogical Impulse — end4](https://github.com/end-4/dots-hyprland))
 
 ### — Contents
 
@@ -8,12 +12,28 @@
 
 ---
 
+<p align="center">
+  <img alt="home" src="public/home.png" />
+</p>
+
+<p align="center">
+  <img alt="settings" src="public/settings.png" />
+</p>
+
+<p align="center">
+  <img alt="lockscreen" src="public/lockscreen.png" />
+</p>
+
+<p align="center">
+  <img alt="code" src="public/code.png" />
+</p>
+
 ### — Features
 
 #### `Hyprland configs`
 
 | | end4 | ii-zero |
-| -- | ------ | --------- |
+| --- | --- | --- |
 | **Windows** | solid | translucent |
 | **Animations** | many curves & effects | simple easing |
 | **Blur** | minimal | strong |
@@ -23,7 +43,7 @@
 #### `Added / changed keybinds`
 
 | Keybind | Action |
-| --------- | -------- |
+| --- | --- |
 | `SUPER + ALT + Return` | Launch tmux |
 | `SUPER + SHIFT + [1-0]` | Send window to workspace |
 | `CAPS + Space + n` | Insert name |
@@ -36,7 +56,7 @@
 #### `App configs`
 
 | App | Config |
-| ----- | -------- |
+| --- | --- |
 | **Opencode** | `"theme": "system"` — follows illogical impulse light/dark theme |
 | **LazyVim** | Reads generated colors from `~/.local/state/quickshell/user/generated/colors.json` — dynamic Material You palette |
 | **Tmux** | Fish shell, vi keys, prefix `C-Space`, window management via `M-[1-9]`, dynamic status bar |
@@ -46,7 +66,7 @@
 #### `Fish commands`
 
 | Command | Action |
-| ------- | ------ |
+| --- | --- |
 | `n <file-or-dir>` | Quick nvim open (with cd for directories) |
 | `ttyedit` | Edit and reload <getty@tty1.service> |
 | `install-xcompose` | Copy .XCompose and set XCOMPOSEFILE |
@@ -86,7 +106,7 @@ bash ~/.config/ii-zero/install.sh --fish --tmux
 #### `What it does`
 
 | Config | Method | Backup? |
-| ------ | ------ | ------- |
+| --- | --- | --- |
 | hyprland | symlink → `~/.config/hypr/custom` | yes |
 | fish | append source line to `config.fish` | no |
 | nvim-plugin | symlink → `~/.config/nvim/lua/plugins` | yes |
