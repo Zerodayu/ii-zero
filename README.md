@@ -3,7 +3,7 @@
 ### — Contents
 
 * [Features](#-features)
-* [Installation](#-installations)
+* [Installation](#-installation)
 * [Usage](#-usage)
 
 ---
@@ -26,7 +26,6 @@
 | --------- | -------- |
 | `SUPER + ALT + Return` | Launch tmux |
 | `SUPER + SHIFT + [1-0]` | Send window to workspace |
-| `CAPS + Space + Space` | emdash "—" |
 | `CAPS + Space + n` | Insert name |
 | `CAPS + Space + e` | Insert email |
 | `CAPS + Space + p` | Insert password |
@@ -49,10 +48,11 @@
 | Command | Action |
 | ------- | ------ |
 | `n <file-or-dir>` | Quick nvim open (with cd for directories) |
-| `gclone <url> [dir]` | Git clone into ~/Projects |
-| `ttyedit` | Edit and reload <getty@tty1.service>(for auto-login using tty) |
+| `ttyedit` | Edit and reload getty@tty1.service |
 | `install-xcompose` | Copy .XCompose and set XCOMPOSEFILE |
 | `matugen-patch` | Patch matugen config with nvim/opencode templates |
+| `oc` | alias for opencode |
+| `fish-reload` | Reload fish config |
 
 ---
 
