@@ -4,6 +4,7 @@
     "opencode-agent-skills",
     "@tarquinen/opencode-dcp@latest",
     "@upstash/context7-opencode",
+    "openslimedit@latest"
   ],
   "permission": {
     "*": "ask",
