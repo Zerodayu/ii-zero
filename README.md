@@ -101,3 +101,4 @@ bash ~/.config/ii-zero/install.sh --fish --tmux
 1. **Hyprland**: run `hyprctl reload`
 2. **XCompose**: edit `~/.XCompose` and replace placeholders (`NAME_PLACEHOLDER`, `EMAIL_PLACEHOLDER`, `PASSWORD_PLACEHOLDER`), then relogin
 3. **Matugen**: run `matugen-patch` in fish to apply nvim/opencode templates
+4. **end4-pC** (optional): run `install-end4-pC` in fish to install [pctrade/end4-pC](https://github.com/pctrade/end4-pC) quickshell config
