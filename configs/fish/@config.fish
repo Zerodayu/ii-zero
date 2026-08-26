@@ -12,20 +12,6 @@ function n
     end
 end
 
-function gclone
-    if test (count $argv) -eq 0
-        echo "Usage: gclone <repo-url> [dir-name]"
-        return 1
-    end
-    mkdir -p ~/Projects
-    if test (count $argv) -ge 2
-        git clone $argv[1] ~/Projects/$argv[2]
-    else
-        set -l repo_name (basename $argv[1] .git)
-        git clone $argv[1] ~/Projects/$repo_name
-    end
-end
-
 function ttyedit
     sudo -E systemctl edit getty@tty1.service
     and sudo systemctl daemon-reload
@@ -39,6 +25,10 @@ function install-xcompose
     and set -Ux XCOMPOSEFILE ~/.XCompose
     and echo "XCompose installed and XCOMPOSEFILE set"
     or echo "failed to install XCompose"
+end
+
+function matugen-patch
+    bash ~/.config/ii-zero/configs/matugen/matugen-patch.sh
 end
 
 alias oc opencode
