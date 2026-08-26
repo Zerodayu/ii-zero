@@ -52,59 +52,51 @@
 | `gclone <url> [dir]` | Git clone into ~/Projects |
 | `ttyedit` | Edit and reload <getty@tty1.service>(for auto-login using tty) |
 | `install-xcompose` | Copy .XCompose and set XCOMPOSEFILE |
+| `matugen-patch` | Patch matugen config with nvim/opencode templates |
 
 ---
 
-### — Installations
-
-#### `Clone`
+### — Installation
 
 ```bash
+# Clone
 git clone https://github.com/Zerodayu/ii-zero.git ~/.config/ii-zero
+
+# Install all configs
+bash ~/.config/ii-zero/install.sh
 ```
 
-### — Usage
-
-#### `Hyprland configs`
+#### `Selective install`
 
 ```bash
-# backup existing
-mv ~/.config/hypr/custom ~/.config/hypr/custom.bak
+bash ~/.config/ii-zero/install.sh --fish
+bash ~/.config/ii-zero/install.sh --nvim-plugin
+bash ~/.config/ii-zero/install.sh --tmux
+bash ~/.config/ii-zero/install.sh --opencode
+bash ~/.config/ii-zero/install.sh --fastfetch
+bash ~/.config/ii-zero/install.sh --xcompose
+bash ~/.config/ii-zero/install.sh --matugen
+bash ~/.config/ii-zero/install.sh --hyprland
 
-ln -s ~/.config/ii-zero/hyprland/ ~/.config/hypr/custom
-hyprctl reload
+# multiple at once
+bash ~/.config/ii-zero/install.sh --fish --tmux
 ```
 
-#### `App configs`
+#### `What it does`
 
-add this line to `~/.config/fish/config.fish`
+| Config | Method | Backup? |
+| ------ | ------ | ------- |
+| hyprland | symlink → `~/.config/hypr/custom` | yes |
+| fish | append source line to `config.fish` | no |
+| nvim-plugin | symlink → `~/.config/nvim/lua/plugins` | yes |
+| tmux | symlink → `~/.config/tmux` | no |
+| opencode | symlink → `~/.config/opencode` | no |
+| fastfetch | symlink → `~/.config/fastfetch` | no |
+| xcompose | copy `.XCompose` to `~/.XCompose` | no |
+| matugen | copies templates + patches config.toml | no |
 
-```bash
-source ~/.config/ii-zero/configs/fish/@config.fish
-```
+#### `Post-install`
 
-```bash
-# nvim/LazyVim dynamic theme
-mv ~/.config/nvim/lua/plugins ~/.config/nvim/lua/plugins.bak
-ln -s ~/.config/ii-zero/configs/nvim-plugin/ ~/.config/nvim/lua/plugins
-
-# Tmux laoyut and dynamyc theme
-ln -s ~/.config/ii-zero/configs/tmux/ ~/.config/tmux
-
-# Opencode rules & dynamic theme
-ln -s ~/.config/ii-zero/configs/opencode/ ~/.config/opencode
-
-# Fastfetch layout
-ln -s ~/.config/ii-zero/configs/fastfetch/ ~/.config/fastfetch
-
-# XCompose (copy, not symlink — user edits are preserved)
-# Assumes fish config is sourced (includes install-xcompose function)
-install-xcompose
-
-# Edit ~/.Xcompose and replace placeholders with your actual values:
-#   NAME_PLACEHOLDER → your name
-#   EMAIL_PLACEHOLDER → your email
-#   PASSWORD_PLACEHOLDER → your password
-
-# Then relogin (needs full relogin every time you change ~/.Xcompose)
-```
+1. **Hyprland**: run `hyprctl reload`
+2. **XCompose**: edit `~/.XCompose` and replace placeholders (`NAME_PLACEHOLDER`, `EMAIL_PLACEHOLDER`, `PASSWORD_PLACEHOLDER`), then relogin
+3. **Matugen**: run `matugen-patch` in fish to apply nvim/opencode templates
