@@ -5,7 +5,6 @@
     "@tarquinen/opencode-dcp@latest",
     "@upstash/context7-opencode",
     "openslimedit@latest",
-    "superpowers@git+https://github.com/obra/superpowers.git"
   ],
   "permission": {
     "*": "ask",
