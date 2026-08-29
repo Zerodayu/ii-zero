@@ -39,18 +39,25 @@ function install-end4-pC
     end
     git clone https://github.com/pctrade/end4-pC.git "$target"
     killall qs 2>/dev/null
-    qs -c end4-pC > /dev/null 2>&1 & disown
+    qs -c end4-pC >/dev/null 2>&1 & disown
     echo "end4-pC installed and started."
 
     read -P "Set end4-pC as default shell? [y/N] " -l confirm
-    if test "$confirm" = "y" -o "$confirm" = "Y"
+    if test "$confirm" = y -o "$confirm" = Y
         sed -i 's/hl.env("qsConfig", "ii")/hl.env("qsConfig", "end4-pC")/' \
             ~/.config/hypr/hyprland/variables.lua
         echo "Default shell set to end4-pC. Run 'hyprctl reload' to apply."
     end
 end
 
-alias oc opencode
+function sys-update
+    cd ~/.cache/dots-hyprland && git stash && git pull && ./setup install
+end
+
+function oc
+    opencode $argv
+end
+
 alias fish-reload 'source ~/.config/fish/config.fish && source ~/.config/ii-zero/configs/fish/@config.fish'
 set -gx EDITOR nvim
 
