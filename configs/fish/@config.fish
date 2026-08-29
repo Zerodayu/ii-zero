@@ -1,3 +1,16 @@
+function zer0
+    echo " zer0 commands"
+    echo ""
+    echo "  n <file/dir>        Quick nvim launcher"
+    echo "  ttyedit             Edit/reload getty@tty1 (auto-login)"
+    echo "  install-xcompose    Install XCompose"
+    echo "  matugen-patch       Patch matugen config"
+    echo "  install-end4-pC     Install end4-pC quickshell"
+    echo "  sys-update          Update end4 dots-hyprland"
+    echo "  oc                  Opencode wrapper"
+    echo "  fish-reload         Reload fish config"
+end
+
 function n
     if test (count $argv) -eq 0
         echo "Usage: n <file-or-directory>"
