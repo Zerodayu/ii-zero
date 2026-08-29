@@ -91,6 +91,12 @@ Suggest a commit message at the END OF EACH STEP — not once per task or sessio
   into a single table at the end.
 - Prefix the message with one of: `update:`, `new:`, `add:`, `feat:`, `fix:`,
   `refactor:` — pick the one that best fits that step.
+  - `feat:` — new feature or functionality
+  - `fix:` — bug fix or error correction
+  - `update:` — modifying existing code, config, or dependencies
+  - `new:` — adding new files or resources
+  - `add:` — adding content to existing files (docs, tests, comments)
+  - `refactor:` — restructuring code without changing behavior
 - Keep the summary short and imperative (e.g. `feat: add fuzzy finder to config`).
 - "Files to add" lists only the file paths changed in that step (no `git add`
   prefix). When a message covers several files, repeat the message on one row per
