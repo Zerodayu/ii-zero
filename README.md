@@ -67,6 +67,7 @@
 
 | Command | Action |
 | --- | --- |
+| `???` | Show available ii-zero commands |
 | `n <file-or-dir>` | Quick nvim open (with cd for directories) |
 | `ttyedit` | Edit and reload <getty@tty1.service> |
 | `install-xcompose` | Copy .XCompose and set XCOMPOSEFILE |
