@@ -1,4 +1,4 @@
-function zer0
+function ???
     echo " zer0 commands"
     echo ""
     echo "  n <file/dir>        Quick nvim launcher"
