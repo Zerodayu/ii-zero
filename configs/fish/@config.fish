@@ -1,5 +1,5 @@
 function ???
-    echo " zer0 commands"
+    echo " ii-zero commands"
     echo ""
     echo "  n <file/dir>        Quick nvim launcher"
     echo "  ttyedit             Edit/reload getty@tty1 (auto-login)"
