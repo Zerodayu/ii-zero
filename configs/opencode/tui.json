@@ -1,7 +1,10 @@
 {
   "$schema": "https://opencode.ai/tui.json",
   "theme": "system",
-  "plugin": [
-    "@tarquinen/opencode-dcp@latest"
-  ]
+  "attention": {
+    "enabled": true,
+    "notifications": true,
+    "sound": true,
+    "volume": 0.4
+  }
 }
