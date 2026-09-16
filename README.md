@@ -84,23 +84,23 @@
 git clone https://github.com/Zerodayu/ii-zero.git ~/.cache/ii-zero
 
 # Install all configs
-bash ~/.config/ii-zero/install.sh
+bash ~/.cache/ii-zero/install.sh
 ```
 
 #### `Selective install`
 
 ```bash
-bash ~/.config/ii-zero/install.sh --fish
-bash ~/.config/ii-zero/install.sh --nvim-plugin
-bash ~/.config/ii-zero/install.sh --tmux
-bash ~/.config/ii-zero/install.sh --opencode
-bash ~/.config/ii-zero/install.sh --fastfetch
-bash ~/.config/ii-zero/install.sh --xcompose
-bash ~/.config/ii-zero/install.sh --matugen
-bash ~/.config/ii-zero/install.sh --hyprland
+bash ~/.cache/ii-zero/install.sh --fish
+bash ~/.cache/ii-zero/install.sh --nvim-plugin
+bash ~/.cache/ii-zero/install.sh --tmux
+bash ~/.cache/ii-zero/install.sh --opencode
+bash ~/.cache/ii-zero/install.sh --fastfetch
+bash ~/.cache/ii-zero/install.sh --xcompose
+bash ~/.cache/ii-zero/install.sh --matugen
+bash ~/.cache/ii-zero/install.sh --hyprland
 
 # multiple at once
-bash ~/.config/ii-zero/install.sh --fish --tmux
+bash ~/.cache/ii-zero/install.sh --fish --tmux
 ```
 
 #### `What it does`

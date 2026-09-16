@@ -34,14 +34,14 @@ function ttyedit
 end
 
 function install-xcompose
-    cp ~/.config/ii-zero/configs/xcompose/.XCompose ~/.XCompose
+    cp ~/.cache/ii-zero/configs/xcompose/.XCompose ~/.XCompose
     and set -Ux XCOMPOSEFILE ~/.XCompose
     and echo "XCompose installed and XCOMPOSEFILE set"
     or echo "failed to install XCompose"
 end
 
 function matugen-patch
-    bash ~/.config/ii-zero/configs/matugen/matugen-patch.sh
+    bash ~/.cache/ii-zero/configs/matugen/matugen-patch.sh
 end
 
 function install-end4-pC
@@ -71,7 +71,7 @@ function oc
     opencode $argv
 end
 
-alias fish-reload 'source ~/.config/fish/config.fish && source ~/.config/ii-zero/configs/fish/@config.fish'
+alias fish-reload 'source ~/.config/fish/config.fish && source ~/.cache/ii-zero/configs/fish/@config.fish'
 set -gx EDITOR nvim
 
 source ~/.config/fish/auto-Hypr.fish
