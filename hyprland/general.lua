@@ -1,5 +1,3 @@
-require("hyprland/shellOverrides/animations")
-
 hl.config({
 	decoration = {
 		rounding_power = 2.5,
