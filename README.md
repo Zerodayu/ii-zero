@@ -81,7 +81,7 @@
 
 ```bash
 # Clone
-git clone https://github.com/Zerodayu/ii-zero.git ~/.config/ii-zero
+git clone https://github.com/Zerodayu/ii-zero.git ~/.cache/ii-zero
 
 # Install all configs
 bash ~/.config/ii-zero/install.sh
