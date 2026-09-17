@@ -1,14 +1,11 @@
 {
   "$schema": "https://opencode.ai/config.json",
   "formatter": true,
-  "mcp": {
-    "servers": {
-      "context7": {
-        "type": "remote",
-        "url": "https://mcp.context7.com/mcp"
-      }
-    }
-  },
+  "instructions": [
+    "AGENTS.md",
+    "rules/commit-messages.md",
+    "rules/package-management.md"
+  ],
   "permission": {
     "*": "ask",
     "read": "allow",
@@ -22,6 +19,14 @@
       "pr-review": "allow",
       "internal-*": "deny",
       "experimental-*": "ask"
+    }
+  },
+  "mcp": {
+    "servers": {
+      "context7": {
+        "type": "remote",
+        "url": "https://mcp.context7.com/mcp"
+      }
     }
   },
   "plugins": [
