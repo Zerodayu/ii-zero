@@ -68,7 +68,7 @@ function sys-update
 end
 
 function oc
-    opencode --standalone $argv
+    opencode $argv
 end
 
 alias fish-reload 'source ~/.config/fish/config.fish && source ~/.cache/ii-zero/configs/fish/@config.fish'
