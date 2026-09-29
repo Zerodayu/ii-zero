@@ -62,6 +62,7 @@
 | **Tmux** | Fish shell, vi keys, prefix `C-Space`, window management via `M-[1-9]`, dynamic status bar |
 | **Fish** | Custom utility functions — see below |
 | **XCompose** | Custom autofill for name/email/password (user preference) |
+| **Vencord** | Paste into Settings → Vencord → Themes → Online Themes: `https://raw.githubusercontent.com/Zerodayu/ii-zero/master/configs/vencord-themes/system24.theme.css` |
 
 #### `Fish commands`
 
