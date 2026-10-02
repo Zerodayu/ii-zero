@@ -7,7 +7,7 @@ changelog / release-notes file.
 
 ```markdown
 v1.2.0 - Dark mode release
-Adds a dark theme across the app.
+> Adds a dark theme across the app.
 
 ## FEATURES / WHATS NEW
 - dark theme toggle
@@ -26,7 +26,7 @@ Released 2026-10-02. Thanks to @contributor.
 ## Structure
 
 - **Title line**: `version - short title` — e.g. `v1.2.0 - Dark mode release`.
-- **Short desc**: one line right under the title summarizing the release.
+- **Short desc**: one line blockquote right under the title summarizing the release.
 - **Sections**: `##` h2 headers, in this order when present:
   - `## features / whats new`
   - `## fixes`
