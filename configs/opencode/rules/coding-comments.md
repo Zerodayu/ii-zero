@@ -37,12 +37,41 @@ form only when really needed (same shape for `#`, `--`, ...)
 - Don't pad obvious lines or add a comment to every block just to hit a quota.
 - No narration ("now we loop over items"), no filler headers on tiny functions.
 
+## Env & config files
+
+In env/config files (`Dockerfile`, `Caddyfile`, `.env`, docker-compose files,
+and similar), comments are **labels**, not prose:
+
+- **One line only** — no blocks, no wrapped continuations, ever.
+- The comment labels the section, stage, or directive below it: a heading
+  for what follows, not an explanation.
+- **Still start with a keyword** (`NOTE:`, `TODO:`, ...) so they stay
+  searchable in the picker.
+- A few words after the keyword max — if it needs more, it doesn't belong
+  in a config file.
+
 ## Examples
 
 ```ts
 // TODO: handle empty array before merge
 // FIXME: retries leak the client on timeout
 /* NOTE: cache is per-request, not global */
+```
+
+Config files — one-line labels, keyword first:
+
+```dockerfile
+# NOTE: build stage
+# TODO: pin base image digest
+# NOTE: frontend local env
+# NOTE: Docker configs
+```
+
+Avoid in config files:
+
+```dockerfile
+# NOTE: this stage compiles the app so that the final image           <- wraps
+# can stay small, which matters for deploys
 ```
 
 Blocks that earn their length — `*/` on its own line or hung on the last
