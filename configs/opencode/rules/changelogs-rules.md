@@ -9,14 +9,14 @@ changelog / release-notes file.
 v1.2.0 - Dark mode release
 Adds a dark theme across the app.
 
-## features / whats new
+## FEATURES / WHATS NEW
 - dark theme toggle
 - follows system preference
 
-## fixes
+## FIXES
 - login redirect loop
 
-## changes
+## CHANGES
 - theme colors moved to tokens
 - reduced bundle size
 ---
