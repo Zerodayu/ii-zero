@@ -74,5 +74,6 @@ end
 alias fish-reload 'source ~/.config/fish/config.fish && source ~/.cache/ii-zero/configs/fish/@config.fish'
 set -gx EDITOR nvim
 
-term xterm-256color
+alias ssh="env TERM=xterm-256color ssh"
+
 source ~/.config/fish/auto-Hypr.fish
