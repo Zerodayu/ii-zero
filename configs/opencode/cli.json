@@ -13,6 +13,8 @@
   },
   "animations": true,
   "attention": {
-    "enabled": false
+    "enabled": true,
+    "volume": 1,
+    "notifications": false
   }
 }
