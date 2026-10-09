@@ -38,7 +38,12 @@
       "effect": "ask"
     },
     {
-      "action": "todowrite",
+      "action": "skill",
+      "resource": "*",
+      "effect": "allow"
+    },
+    {
+      "action": "question",
       "resource": "*",
       "effect": "allow"
     }
