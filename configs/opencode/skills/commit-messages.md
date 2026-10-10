@@ -30,6 +30,9 @@ Suggest a commit message at the END OF EACH STEP — not once per task or sessio
   unrelated steps (e.g. a feature plus an unrelated fix) into one commit. Small,
   single-purpose commits are easier to review and revert than one large commit
   covering several steps.
+- Never one giant "commit all" at the end of a task or session. Commit after
+  each step or task — small commits grouped per task — so each is easy to
+  review and revert.
 
 | Commit message | Files to add                 |
 | -------------- | ---------------------------- |
