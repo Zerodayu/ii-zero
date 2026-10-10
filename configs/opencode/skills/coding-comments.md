@@ -31,6 +31,8 @@ form only when really needed (same shape for `#`, `--`, ...)
   workarounds, unfinished or known-issue spots, and anything a reader would
   have to reverse-engineer.
 - Keep comments straightforward: one line where possible, plain words, no prose.
+- One thought = one line. Never stack `//` lines to continue a sentence —
+  if it doesn't fit one line, it's a `/* ... */` block (or cut it down).
 - Prefer single-line `//` comments. Use a multi-line `/* ... */` block only
   when it's really needed: a reason that genuinely doesn't fit one line, or a
   `/** */` JSDoc on an exported function/type. Any aligned `*`-continuation
@@ -94,6 +96,8 @@ Avoid:
 ```ts
 // loop over items          <- says nothing beyond the code
 // TODO                      <- no text after the keyword
+// this comment here will gonna
+// continue here below       <- wrapped across // lines; use /* */ or cut it
 /* TODO: init */            <- a block for a one-line comment
 /* asdasd
  *
