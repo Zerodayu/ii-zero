@@ -11,20 +11,6 @@ function ???
     echo "  fish-reload         Reload fish config"
 end
 
-function n
-    if test (count $argv) -eq 0
-        echo "Usage: n <file-or-directory>"
-        return 1
-    end
-    if test -d $argv[1]
-        cd $argv[1]
-        nvim .
-    else
-        cd (dirname $argv[1])
-        nvim (basename $argv[1])
-    end
-end
-
 function ttyedit
     sudo -E systemctl edit getty@tty1.service
     and sudo systemctl daemon-reload
@@ -67,11 +53,13 @@ function sys-update
     cd ~/.cache/dots-hyprland && git stash && git pull && ./setup install
 end
 
-function oc
-    opencode $argv
+alias fish-reload 'source ~/.config/fish/config.fish && source ~/.cache/ii-zero/configs/fish/@config.fish'
+
+# NOTE: abbreviations
+if status is-interactive
+    abbr -a oc opencode
+    abbr -a n nvim
 end
 
-alias fish-reload 'source ~/.config/fish/config.fish && source ~/.cache/ii-zero/configs/fish/@config.fish'
 set -gx EDITOR nvim
-
 source ~/.config/fish/auto-Hypr.fish
