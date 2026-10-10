@@ -36,7 +36,7 @@ hl.config({
 	},
 	input = {
 		numlock_by_default = false,
-		kb_options = "compose:caps",
+		kb_options = "compose:caps,shift:both_capslock",
 	},
 })
 
