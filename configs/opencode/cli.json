@@ -15,6 +15,7 @@
   "attention": {
     "enabled": true,
     "volume": 1,
-    "notifications": false
+    "notifications": true,
+    "sound": true
   }
 }
