@@ -59,6 +59,8 @@ alias fish-reload 'source ~/.config/fish/config.fish && source ~/.cache/ii-zero/
 if status is-interactive
     abbr -a oc opencode
     abbr -a n nvim
+    abbr -a lg lazygit
+    abbr -a ld lazydocker
 end
 
 set -gx EDITOR nvim
