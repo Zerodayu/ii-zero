@@ -56,7 +56,6 @@
   },
   "plugins": [
     "@tarquinen/opencode-dcp@latest",
-    "openslimedit@latest",
     "@dietrichgebert/ponytail@latest"
   ]
 }
