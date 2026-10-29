@@ -3,8 +3,14 @@ hl.bind("SUPER + escape", hl.dsp.global("quickshell:settingsToggle"), { descript
 
 -- tmux launch
 hl.bind("SUPER + ALT + Return", hl.dsp.exec_cmd("kitty -e tmux new-session -A -s 0"), { description = "App: Tmux" })
-
 hl.bind("SUPER + ALT + t", hl.dsp.exec_cmd("kitty -e tmux new-session -A -s 0"), { description = "App: Tmux" })
+
+-- QR code scanner
+hl.bind(
+	"SUPER + SHIFT + Q",
+	hl.dsp.global("quickshell:regionQr"),
+	{ description = "Utilities: QR code scan >> clipboard" }
+)
 
 -- toggle window transparency
 hl.bind(
