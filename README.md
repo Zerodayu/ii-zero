@@ -72,7 +72,7 @@
 | `n <file-or-dir>` | Quick nvim open (with cd for directories) |
 | `ttyedit` | Edit and reload <getty@tty1.service> |
 | `install-xcompose` | Copy .XCompose and set XCOMPOSEFILE |
-| `matugen-patch` | Patch matugen config with nvim/opencode templates |
+| `matugen-patch` | Patch matugen config with nvim template |
 | `install-end4-pC` | Clone and start end4-pC quickshell config |
 | `oc` | alias for opencode |
 | `fish-reload` | Reload fish config |
@@ -122,5 +122,5 @@ bash ~/.cache/ii-zero/install.sh --fish --tmux
 
 1. **Hyprland**: run `hyprctl reload`
 2. **XCompose**: edit `~/.XCompose` and replace placeholders (`NAME_PLACEHOLDER`, `EMAIL_PLACEHOLDER`, `PASSWORD_PLACEHOLDER`), then relogin
-3. **Matugen**: run `matugen-patch` in fish to apply nvim/opencode templates
+3. **Matugen**: run `matugen-patch` in fish to apply the nvim template
 4. **end4-pC** (optional): run `install-end4-pC` in fish to install [pctrade/end4-pC](https://github.com/pctrade/end4-pC) quickshell config
