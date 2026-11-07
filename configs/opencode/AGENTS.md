@@ -7,6 +7,7 @@ Development happens on an Arch-based Linux environment (CachyOS) using Neovim (L
 - Runtime & package manager: **Bun only**. Never generate `npm`, `npx`, `node`, `yarn`, or `pnpm` commands unless there is truly no Bun equivalent.
 - Prefer Bun-native APIs and modern TypeScript syntax.
 - Assume a Linux shell (Arch/CachyOS) for all commands and examples.
+- Never run `git commit` or `git push` without first loading the `commit-messages` skill, showing the per-step table, and getting explicit approval.
 
 ## Skills
 
