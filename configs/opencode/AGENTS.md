@@ -9,9 +9,14 @@ Development happens on an Arch-based Linux environment (CachyOS) using Neovim (L
 - Assume a Linux shell (Arch/CachyOS) for all commands and examples.
 - Never run `git commit` or `git push` without first loading the `commit-messages` skill, showing the per-step table, and getting explicit approval.
 
-## Skills
+## Skills — mandatory pre-check
 
-Conditional rules live as skills (`skills/*.md`) and are advertised by
-description — load them with the `skill` tool when the task matches:
-`output-files`, `package-management`, `commit-messages`, `changelogs-rules`,
-`coding-comments`.
+**Before your first tool call in a task, decide if a skill matches. If yes, load it first — never do the work, then load the skill.**
+
+- editing any file (code, config, docs) → `coding-comments`
+- any dependency, workspace, `bun run`, or script command → `package-management`
+- any changelog / release-notes file → `changelogs-rules`
+- any commit suggestion, `git commit`, or `git push` → `commit-messages`
+- any one-time output before writing a file → `output-files`
+
+A skill you have not loaded is a skill you are not following.
