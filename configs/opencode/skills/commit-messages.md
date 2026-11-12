@@ -5,7 +5,7 @@ description: Commit message suggestion format and per-step table. Load when abou
 
 # Commit Message Suggestions
 
-Suggest a commit message at the END OF EACH STEP — not once per task or session.
+Suggest a commit message at the END OF EACH TASK (one logical change) — not once per session.
 
 - After every completed step (each distinct change: a feature added, a file edited,
   a bug fixed, a refactor), immediately output ONE suggestion table covering only
@@ -26,13 +26,11 @@ Suggest a commit message at the END OF EACH STEP — not once per task or sessio
   table stays valid.
 - Do not run `git commit`. Ask the user whether they want to commit themselves
   or have you run it.
-- Keep each commit scoped to a single step's changes — don't bundle multiple
-  unrelated steps (e.g. a feature plus an unrelated fix) into one commit. Small,
-  single-purpose commits are easier to review and revert than one large commit
-  covering several steps.
-- Never one giant "commit all" at the end of a task or session. Commit after
-  each step or task — small commits grouped per task — so each is easy to
-  review and revert.
+- One task = one logical change = one commit. If a session completed several
+  unrelated tasks, output a separate table per task — never combine them into a
+  single commit, even if they touched the same files. Small, single-purpose
+  commits are easier to review and revert than one large commit covering
+  several tasks.
 
 | Commit message | Files to add                 |
 | -------------- | ---------------------------- |
