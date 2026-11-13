@@ -9,6 +9,7 @@ Development happens on an Arch-based Linux environment (CachyOS) using Neovim (L
 - Assume a Linux shell (Arch/CachyOS) for all commands and examples.
 - Never run `git commit` or `git push` without first loading the `commit-messages` skill, showing the per-step table, and getting explicit approval.
 - Commit scope: one commit per distinct task or change — never merge unrelated tasks into a single commit. If a session completed multiple unrelated tasks, propose separate commits, one per task, even when the same files were touched.
+- Project docs are one system: `AGENTS.md` (index), `SYSTEM-DESIGN.md`, `ROADMAP.md` and `.agents/skills/<project>-<id>/SKILL.md`. A rule has exactly one home — never duplicate it, move it when it belongs elsewhere, and keep all of them in sync.
 
 ## Skills — mandatory pre-check
 
@@ -19,5 +20,6 @@ Development happens on an Arch-based Linux environment (CachyOS) using Neovim (L
 - any changelog / release-notes file → `changelogs-rules`
 - any commit suggestion, `git commit`, or `git push` → `commit-messages`
 - any one-time output before writing a file → `output-files`
+- learning a durable project rule or fact (command, path convention, "always do X", service limit), or creating/editing/auditing `AGENTS.md`, `SYSTEM-DESIGN.md`, `ROADMAP.md` or project skills → `project-setup`
 
 A skill you have not loaded is a skill you are not following.
